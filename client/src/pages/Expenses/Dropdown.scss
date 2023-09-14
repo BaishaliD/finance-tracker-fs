@@ -1,0 +1,33 @@
+.menu-container {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-menu {
+  background-color: var(--lightgray);
+  width: 80%;
+  position: absolute;
+  top: 10;
+  left: 10;
+  ul {
+    list-style: none;
+    max-height: 250px;
+    overflow-y: scroll;
+    padding-inline-start: 0;
+
+    li {
+      width: 100%;
+      border-bottom: 1px solid rgb(187, 187, 187);
+      padding: 10px;
+      &:hover {
+        background-color: var(--hover);
+      }
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+}

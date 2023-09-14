@@ -1,0 +1,44 @@
+h3 {
+  color: var(--darkergray);
+  text-align: left;
+}
+
+.expense-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: var(--primary);
+  text-transform: capitalize;
+  box-shadow: var(--shadow);
+
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--lightgray);
+  }
+
+  th {
+    background-color: var(--hover);
+    color: var(--accent);
+
+    div {
+      display: flex;
+      align-items: center;
+      padding: 2px;
+
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+
+  tr:nth-child(even) {
+    background-color: var(--lightgray);
+  }
+}
+.no-table-data {
+  font-size: 24px;
+  padding: 2rem;
+  color: var(--darkgray);
+}

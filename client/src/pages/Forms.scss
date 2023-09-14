@@ -1,0 +1,56 @@
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #555;
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  border-color: #007bff;
+}
+
+input:focus {
+  border-color: var(--accent);
+}
+
+/* StyledExpenseCategoryDropdown.css */
+.dropdown {
+  .styled-dropdown {
+    display: flex;
+    align-items: center;
+  }
+
+  label {
+    margin-right: 10px;
+  }
+
+  select {
+    padding: 5px;
+  }
+
+  /* Style individual dropdown options */
+  select option {
+    padding: 5px;
+    // background-image: url("icon.png"); /* Replace 'icon.png' with your icon image */
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px; /* Adjust as needed for proper spacing */
+  }
+}

@@ -1,0 +1,41 @@
+.chart-container {
+  display: flex;
+  width: 100%;
+
+  h3 {
+    color: var(--darkergray);
+    text-align: left;
+  }
+  .chart {
+    padding: 1rem;
+    margin: 0 0.5rem;
+    box-sizing: border-box;
+    border: 1px solid var(--lightgray);
+
+    transition: all 0.2s ease-in-out;
+    border-radius: 5px;
+    width: 100%;
+
+    &:hover {
+      box-shadow: var(--shadow);
+    }
+  }
+  .large {
+    width: 70%;
+    padding: 1rem;
+  }
+  .small {
+    width: 30%;
+    padding: 1rem;
+  }
+}
+
+.no-chart-data {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  padding: 0;
+  color: var(--darkgray);
+}

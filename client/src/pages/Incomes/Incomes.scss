@@ -1,0 +1,42 @@
+.income-card {
+  background-color: var(--lightgray);
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  margin: 0.8rem auto;
+
+  img {
+    float: right;
+  }
+
+  .title {
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .details {
+    display: flex;
+    font-size: 14px;
+
+    div {
+      display: flex;
+      align-items: center;
+      margin: 5px 0;
+
+      img {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .comment {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    color: var(--darkgray);
+
+    img {
+      margin-right: 5px;
+    }
+  }
+}
