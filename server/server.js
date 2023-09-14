@@ -4,7 +4,7 @@ import cors from "cors";
 import React from "react";
 import { renderToString } from "react-dom/server";
 import path from "path";
-import Dashboard from "./view/Dashboard.js";
+// import Dashboard from "./view/Dashboard.js";
 
 const userRoutes = require("./routes/userRoutes");
 
@@ -38,11 +38,12 @@ app.get("/dashboard/:slug1/:slug2/:slug3", (req, res) => {
   console.log("SLUGS ", req.params.slug1, req.params.slug2, req.params.slug3);
   const dashboardHtml = renderToString(
     <div id="root">
-      <Dashboard
+      Hello
+      {/* <Dashboard
         income={req.params.slug1}
         expense={req.params.slug2}
         balance={req.params.slug3}
-      />
+      /> */}
     </div>
   );
   return res.send(`
